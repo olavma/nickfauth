@@ -4,10 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(scriptUrl)
         .then(response => response.text())
         .then(token => {
-            var userToken = prompt("Insert your token");
+            console.log(token);
+            if(token === "Script is currently inactive") { wrongToken(); }
+            else {
+                var userToken = prompt("Insert your token");
 
-            if(token === userToken) window.location.href = './truePage/index.html'
-            else wrongToken();
+                if(token === userToken) window.location.href = './truePage/index.html'
+                else wrongToken();
+            }
         })
         .catch(error => console.error('Error: ', error));
 })
