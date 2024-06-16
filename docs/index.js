@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    var scriptUrl = 'https://script.google.com/macros/s/AKfycbxYmcceuf3TXEyfD6TFmqr_-AzUHC09gv5sm0PSmtHrSBT6MrNd3htOpyMaGA41BNr1Cw/exec'; // Reemplaza esto con la URL de tu script de Google Apps
+    var scriptUrl = 'https://script.google.com/macros/s/AKfycbwxzq_RiD2j3WZmJkg2PHsbVv2V9w4-9ryYBEHxa9--FNyreTFaVRoVv8sbjx2sfD7gPw/exec'; // Reemplaza esto con la URL de tu script de Google Apps
 
     fetch(scriptUrl)
         .then(response => response.text())
