@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(scriptUrl)
         .then(response => response.text())
         .then(token => {
-            console.log(token);
+            
             if(token === "Script is currently inactive") { wrongToken(); }
             else {
                 var userToken = prompt("Insert your token");
